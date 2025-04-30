@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    text-align: center;
+    font-size: 30px;
+    background-image: url('pics/bild1.webp');
+   
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #414141;
+    color: #ebebeb;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Für die schwarze Folie */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; /* Hinter allen Inhalten */
+    pointer-events: none; /* Interaktionen nicht blockieren */
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    height: 14vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgb(224, 224, 224);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Platzierung von Logo und Navigation */
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 90px; /* Höhe des Logos */
+    width: auto; 
+  
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    gap: 15px; /* Abstand zwischen den Links */
+}
+
+header a {
+    color: #ffe864bb;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    color: #a5a5a5bb;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0; 
+    z-index: 1;
+}
+
+main {
+    flex: 1;
+    padding: px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+    position: relative; /* Über der Folie */
+    z-index: 1;
+    min-height: 170vh;
+}
+
+.intro {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-top: 130px;
+  margin-bottom: 140px;
+}
+
+.fahrzeug-box {
+    border: 2px dashed #555;
+    padding: 20px;
+    background-color: #696969;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding:0px 0;
+  margin-top: 1000px;
+  position: sticky;
+  height: 250px;
+  z-index: 0;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding:0px 0;
+  margin-top: 1000px;
+  position: sticky;
+  height: 250px;
+  z-index: 0;
+}
+
+.reservation-form {
+font-family: "poppins", sans-serif;   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.features {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 400px;
+  
+    gap: 30px; 
+}
+.img-autos {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Maximale Breite des Bildes */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Schatteneffekt */
+    transition: transform 0.3s; /* Animationseffekt */
+    cursor: pointer; /* Zeiger-Cursor bei Hover */
+    float: right; /* Bild auf die rechte Seite verschieben */
+    margin-left: 20px; /* Abstand zum Text links */
+}
